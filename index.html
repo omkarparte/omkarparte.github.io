@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <title>Omkar Parte</title>
+    <style>
+        @media only screen and (max-width: 768px) {
+            *
+            {
+                font-family: "Handlee", cursive;
+
+            }
+            body {
+                font-family: "Handlee", cursive;
+                background: black;
+                overflow-x: hidden;
+
+            }
+
+            .image {
+                width: 100vw;
+                height: 700px;
+                background: url(main1.jpg);
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+
+
+            }
+
+            .name {
+                font-family: "Handlee", cursive;
+                position: absolute;
+                font-size: 40px;
+                width: 100%;
+                text-align: center;
+                top: 25%;
+            }
+
+            .overlay {
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 750px;
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                font-size: 30px;
+            }
+
+            #spin {
+                color: white;
+                width: 100%;
+                position: absolute;
+                text-align: center;
+                top: 35%;
+                font-size: 25px;
+            }
+
+            #spin:after {
+                content: "";
+                animation: spin 10s linear infinite;
+            }
+
+            @keyframes spin {
+                0% {
+                    content: "Engineer 🎓";
+                }
+
+                20% {
+                    content: "Coder 👨🏻‍💻 💻";
+                }
+
+                40% {
+                    content: "Stock Invester 📉 💸";
+                }
+
+                60% {
+                    content: "Video Graphy 🎥 🎞️";
+                }
+
+                80% {
+                    content: "YouTuber 🖥";
+                }
+
+                100% {
+                    content: "Gammer 🖲️ 🕹️";
+                }
+
+            }
+
+            .adj {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                top: 35%;
+                font-size: 30px;
+            }
+
+            #section10 a {
+                padding-top: 60px;
+            }
+
+            #section10 span {
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                width: 50px;
+                height: 90px;
+                margin-left: -15px;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                box-sizing: border-box;
+            }
+
+            #section10 p {
+                position: absolute;
+                top: 100px;
+                width: 100%;
+                left: 10px;
+                color: white;
+            }
+
+            #section10 span::before {
+                position: absolute;
+                top: 10px;
+                left: 42%;
+                content: '';
+                width: 15px;
+                height: 15px;
+                margin-left: -3px;
+                background-color: #fff;
+                border-radius: 100%;
+                -webkit-animation: sdb10 2s infinite;
+                animation: sdb10 2s infinite;
+                box-sizing: border-box;
+            }
+
+            @-webkit-keyframes sdb10 {
+                0% {
+                    -webkit-transform: translate(0, 0);
+                    opacity: 0;
+                }
+
+                40% {
+                    opacity: 1;
+                }
+
+                80% {
+                    -webkit-transform: translate(0, 20px);
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            @keyframes sdb10 {
+                0% {
+                    transform: translate(0, 0);
+                    opacity: 0;
+                }
+
+                40% {
+                    opacity: 1;
+                }
+
+                80% {
+                    transform: translate(0, 20px);
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            .containet #glow {
+                position: relative;
+                left: 50%;
+
+            }
+
+            .neon {
+                position: relative;
+                text-align: center;
+                font-family: "Handlee", cursive;
+                color: #FB4264;
+                font-size: 30px;
+                line-height: 9vw;
+                text-shadow: 0 0 3vw #F40A35;
+            }
+
+            .flux {
+                position: relative;
+                text-align: center;
+                font-family: "Handlee", cursive;
+                color: #426DFB;
+                font-size: 30px;
+                line-height: 9vw;
+                text-shadow: 0 0 3vw #2356FF;
+            }
+
+            .neon {
+                animation: neon 1s ease infinite;
+                -moz-animation: neon 1s ease infinite;
+                -webkit-animation: neon 1s ease infinite;
+            }
+
+            @keyframes neon {
+
+                0%,
+                100% {
+                    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+                    color: #FED128;
+                }
+
+                50% {
+                    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+                    color: #806914;
+                }
+            }
+
+            .flux {
+                animation: flux 2s linear infinite;
+                -moz-animation: flux 2s linear infinite;
+                -webkit-animation: flux 2s linear infinite;
+                -o-animation: flux 2s linear infinite;
+            }
+
+            @keyframes flux {
+
+                0%,
+                100% {
+                    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+                    color: #28D7FE;
+                }
+
+                50% {
+                    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+                    color: #146C80;
+                }
+            }
+
+            .icon {
+                display: grid;
+                place-items: center;
+                margin: 30px;
+            }
+
+            .ico-circle {
+                padding-top: 20px;
+                border-width: 10px;
+                border-style: solid;
+                width: 140px;
+                height: 140px;
+                border-radius: 90px;
+                border-color: rgb(16, 167, 226);
+            }
+
+            .alignment {
+                position: relative;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- image and  intro-->
+    <section class="image">
+
+        <div class="overlay">
+
+            <p class="name">Hey
+                I am Omkar.</p><br>
+
+            <p><span id="spin"></span></p><br>
+
+            <div class="adj">
+                <section id="section10" class="demo">
+                    <span></span>
+                    <p>Scroll</p>
+                </section>
+            </div>
+
+
+        </div>
+    </section>
+    <!--about me-->
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+            <div class="col">
+                <div class="card">
+                    <div class="alignment">
+                        <img src="photo.jpg" class="img-fluid rounded-circle mt-3 ms-2" alt="..." width="150px;"
+                            height="150px">
+                        <p class="fw-light"><b>Name:</b> Omkar Dipak Parte<br><b>Age:</b>
+                            21<br><b>Email:</b>
+                            omkardipakparte@gmail.com<br><b>mobile:</b> 9372623459<br><b>Student:</b> Information
+                            Technology
+                        </p>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Skill</h5>
+                        <p class="card-text">
+                        <p class="fw-light">Core JAVA<br></p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+
+                        <p class="fw-light mt-3">Data Structure<br></p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+
+                        <p class="fw-light mt-3">Web Development<br></p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+
+                        <p class="fw-light mt-3">DataBase<br></p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+
+                        <p class="fw-light mt-3">Machine Learning<br></p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">30%</div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">About Me<br><br></h5>
+                        <p class="card-text">The Name is Omkar Parte. I am a student who is seeking knowledge and new
+                            opportunities, learning new things daily to make myself better day by day. I am a
+                            Information Technology student from BVCOE, Navi Mumbai, and completed a Diploma in
+                            Information
+                            Technology from
+                            IOPE, Lonere. I live in Smalltown near Raigad named Turbhe Khonda in city Poladpur.<br><br>
+
+                            I bring a range of skills from Web Development to Machine Learning and Java Web Services
+                            Also, want to understand
+                            modern digital finance and banking in great detail. I
+                            love open-source software hence promoting Chrome ;) and also willing to do work as an
+                            open-source software developer. Learning a wide range of technologies is my hobby and using
+                            them in my projects makes me happy.<br><br>
+
+                            I created a wide range of projects in different domains by using various technologies,
+                            Making a good product with great design and easy-to-use experience is my key aspect towards
+                            development. Writing code is a fun task that requires creativity and some copy-pasting as
+                            well.<br><br>
+
+                            Other then my main stream IT I have my invested portfolio in market. Also i have youtube
+                            channel but still i am not completly focus on that. But in future i can focus on my hobbie.
+                            To share lots of eductional and fun containt with you pepoles.Thank you for visting<br>
+                            <br>Thank You!😀
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--what i love to do-->
+        <div class="end mt-5 mb-0">
+            <p class="text-center text-light" style="font-size: 50px;">What I ❤️ To Do</p>
+
+        </div>
+        <div class="end mt-0 mb-5">
+            <p class="fs-6 text-center text-light">Things I Do in my free and busy time...</p>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="icon">
+                                <div class="ico-circle"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="75"
+                                        fill="currentColor" class="bi bi-window-dock" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M15 5H1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5zm0-1H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v1zm1-1a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3z" />
+                                        <path
+                                            d="M3 11.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm4 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm4 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+
+
+                            <h5 class="card-title fw-bold">App Development</h5>
+                            <p class="card-text">Interst created in app devloment at the time of college mini project.
+                                In a free time, I can make small small android app and desktop app with different
+                                technologies.
+                                This is very fun to create applications and I love to do</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="icon">
+                                <div class="ico-circle"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="75"
+                                        fill="currentColor" class="bi bi-file-code" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <h5 class="card-title fw-bold">Web Development</h5>
+                            <p class="card-text">Most of many project i have made in diffrent web technoogies like html
+                                css java script and more.
+                                Web Devloment and Ui desing is very intrested topic for me.
+                                Alfer doing a lots of project in web devloment i can say I love to do.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="icon">
+                                <div class="ico-circle"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="75"
+                                        fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
+                                        <path
+                                            d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <h5 class="card-title fw-bold">Coding</h5>
+                            <p class="card-text">Coding is very fun topic to do in free time.
+                                That improve my logic and thinking. There are lots of websites are available to do the
+                                code.
+                                And after long time of coding experience i can say that I love to do.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="icon">
+                                <div class="ico-circle"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="75"
+                                        fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z" />
+                                        <path
+                                            d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <h5 class="card-title fw-bold">Gaming</h5>
+                            <p class="card-text">From my birth i am intrested in playing computer games 😀 but still i
+                                am struggling to play a compter games 😂.
+                                I played a lots of games, AAA titles. At the time of playing games i can feel i'm in my
+                                dream world.
+                                I am only there with my virtual world for this reason i can say that i love to do. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="icon">
+                                <div class="ico-circle"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="75"
+                                        fill="currentColor" class="bi bi-bicycle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <h5 class="card-title fw-bold">Travling</h5>
+                            <p class="card-text">I like do the travling to experience new things, new places, new
+                                culture and so on but still some reason I am not able to do traving lots.
+                                Still i am watching the vlogs to realted life and travling. In future i can travel lot
+                                and share my exprinces with you through social media. And i acn say that i love to do.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="icon">
+                                <div class="ico-circle"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="75"
+                                        fill="currentColor" class="bi bi-filter-square" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                        <path
+                                            d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <h5 class="card-title fw-bold">Other</h5>
+                            <p class="card-text">I always like to go out of my syllabus. Out of the technological world.
+                                Also lot's of hoobies i have. That changes day by day. I also intrested in puram,
+                                unbelievable things and all. I also intrested in invest in stock marker for long term.
+                                Also i have lots of unic thing that you can see in some time through social media. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- cv and current learning-->
+    <div class="container mt-5">
+        <p class="fs-1 text-center text-light">Current Learning & Update
+        </p>
+    </div>
+
+    <div class="container mb-5" id="glow">
+        <div class="neon">Servelat, JSP, Spring & Hybernet </div>
+        <div class="flux"> Placed in Zycus Infotech</div>
+    </div>
+
+    <div class="container" id="getcv"><button type="button" class="btn btn-outline-light fs-6 text-light" id="cv"><a
+                href="Omkar_Dipak_Parte_Bharti_Vidyapeeth.pdf">
+                GetCV
+        </button></a></div>
+
+    <!--Projects-->
+    <div class="end mt-5 mb-0">
+        <p class="fs-0 text-center text-light" style="font-size: 50px;">PROJECTS</p>
+
+    </div>
+    <div class="end mt-0 mb-5">
+        <p class="fs-6 text-center text-light">Project that I have build...</p>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col">
+                <div class="card">
+                    <img src="pro-5.jpg" class="card-img-top border border-white border-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Diabetic Retinopathy Detection Using CNN</h5>
+                        <p class="card-text">Diabetic retinopathy is a common disease nowadays
+                            because of lots of diabetic patients not aware about
+                            this disease. It causes vision loss as well as blindness.
+                            It is caused by damaging the retina by choking blood
+                            vessels as increasing the level of blood in the retina. If
+                            diabetic is well treated and patients are aware of this
+                            disease then sometimes it is easily treated.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="addmission.jpg" class="card-img-top border border-white border-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Admision Predictor</h5>
+                        <p class="card-text">This project is based on real time problem. A students who want to get
+                            admission
+                            in engineering college, they don’t know which college they will get on their academic
+                            percentage, field
+                            and area. With the team of other I have developed this web application for those engineering
+                            students.
+                            I have used data of 2018 year cut of list of all engineering colleges in Mumbai to predict
+                            an actual
+                            result. We used Web technologies to develop this
+                            project.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="farmer.jpg" class="card-img-top border border-white border-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Farmer Portal</h5>
+                        <p class="card-text">I had design this project to participate in Smart India Hackathon 2018.
+                            This System
+                            provides a platform for farmers to sell their products directly to retail buyers. Provides
+                            farmers an
+                            interface to sell their produce and connect with the buyers by providing Simple interface
+                            with website. This is help to retail buyer and farmer more relable and easy. We used
+                            technologies like HTML, CSS, JavaScript, PHP and MySQL to develop this
+                            project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="grivence.jpg" class="card-img-top border border-white border-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Grivence Redressel System</h5>
+                        <p class="card-text">This is my final year project of diploma and it was developed for
+                            Institute Of Petrochemical Engineering, Lonere. The IT department hired my team for making
+                            this project.
+                            Requirement of this project was to solve collect grievances on different levels. We have
+                            completed project
+                            successfully with various technologies like HTML, CSS, JavaScript, PHP and MySQL. Now that
+                            project is live.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="quiz.jpg" class="card-img-top border border-white border-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Quiz Competition Application For Live Event</h5>
+                        <p class="card-text">We developed this desktop application in visual basic 6
+                            for live quiz competition that was organized by IT department of DBATU, Lonere. We made this
+                            project
+                            live in just one day. Also succefully host this application on all client, aslo complete
+                            this event very well.
+                            We used technologies like Vistual Studio 6.0, ODBC and MySQL to develop this
+                            project.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="railway.jpg" class="card-img-top border border-white border-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Railway Resevation Demo</h5>
+                        <p class="card-text">OBJECTIVE The Railway Reservation System facilitates the passengers to
+                            enquire about the trains available on the basis of source and destination, Booking and
+                            Cancellation of tickets, enquire about the status of the booked ticket, etc. The aim of case
+                            study is to design and develop a database maintaining the records of different trains, train
+                            status, and passengers. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--And lot more-->
+    <p class="fs-1 text-center text-light mt-5">And Lot More</p>
+    <div class="git">
+        <a href="https://github.com/omkarparte" class="link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                class="bi bi-github mt-3" viewBox="0 0 16 16">
+                <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+        </a>
+    </div>
+
+    <!--contact form-->
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-header fs-3 fw-bold text-primary ">
+                Contact Me
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group mt-3">
+
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Type Your Messege Here......"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--ending-->
+    <div class="end mt-5">
+        <p class="fs-1 text-center text-light">Follow Me On</p><br>
+        <div class="social mt-4">
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100010604760453"><i class="fab fa-facebook"
+                            aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg></i></a></li>
+                <li><a href="https://twitter.com/OmkarDipakPart1"><i class="fab fa-twitter" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                        </i></a></li>
+                <li><a href="https://www.linkedin.com/in/omkarparte"><i class="fab fa-linkedin" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </i></a></li>
+                <li><a href="https://www.instagram.com/omkardipakparte/"><i class="fab fa-instagram" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </i></a></li>
+            </ul>
+        </div><br>
+        <div class="ending">
+            <p class="fs-1 text-center text-light mt-4">Thank You For Visiting.... 🙏</p><br>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
